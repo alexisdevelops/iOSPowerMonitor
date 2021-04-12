@@ -13,6 +13,10 @@
 		5E6B63BD2623B3EB00C97D4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6B63BC2623B3EB00C97D4A /* Preview Assets.xcassets */; };
 		5E6B63C82623B3EC00C97D4A /* iOSPowerMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63C72623B3EC00C97D4A /* iOSPowerMonitorTests.swift */; };
 		5E6B63D32623B3EC00C97D4A /* iOSPowerMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63D22623B3EC00C97D4A /* iOSPowerMonitorUITests.swift */; };
+		5E6B63E42623B44200C97D4A /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63E32623B44200C97D4A /* PowerMonitor.swift */; };
+		5E6B63EA2623B5BE00C97D4A /* UnpluggedDeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63E92623B5BE00C97D4A /* UnpluggedDeviceMock.swift */; };
+		5E6B63F22623B95A00C97D4A /* DeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63F12623B95A00C97D4A /* DeviceProtocol.swift */; };
+		5E6B64122623C27200C97D4A /* DeviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63F12623B95A00C97D4A /* DeviceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 		5E6B63CE2623B3EC00C97D4A /* iOSPowerMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPowerMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6B63D22623B3EC00C97D4A /* iOSPowerMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPowerMonitorUITests.swift; sourceTree = "<group>"; };
 		5E6B63D42623B3EC00C97D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6B63E32623B44200C97D4A /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		5E6B63E92623B5BE00C97D4A /* UnpluggedDeviceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnpluggedDeviceMock.swift; sourceTree = "<group>"; };
+		5E6B63F12623B95A00C97D4A /* DeviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +107,8 @@
 				5E6B63B92623B3EB00C97D4A /* Assets.xcassets */,
 				5E6B63BE2623B3EB00C97D4A /* Info.plist */,
 				5E6B63BB2623B3EB00C97D4A /* Preview Content */,
+				5E6B63E32623B44200C97D4A /* PowerMonitor.swift */,
+				5E6B63F12623B95A00C97D4A /* DeviceProtocol.swift */,
 			);
 			path = iOSPowerMonitor;
 			sourceTree = "<group>";
@@ -115,6 +124,7 @@
 		5E6B63C62623B3EC00C97D4A /* iOSPowerMonitorTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E6B63E82623B5AF00C97D4A /* Mocks */,
 				5E6B63C72623B3EC00C97D4A /* iOSPowerMonitorTests.swift */,
 				5E6B63C92623B3EC00C97D4A /* Info.plist */,
 			);
@@ -128,6 +138,14 @@
 				5E6B63D42623B3EC00C97D4A /* Info.plist */,
 			);
 			path = iOSPowerMonitorUITests;
+			sourceTree = "<group>";
+		};
+		5E6B63E82623B5AF00C97D4A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5E6B63E92623B5BE00C97D4A /* UnpluggedDeviceMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6B63E42623B44200C97D4A /* PowerMonitor.swift in Sources */,
+				5E6B63F22623B95A00C97D4A /* DeviceProtocol.swift in Sources */,
 				5E6B63B82623B3E900C97D4A /* ContentView.swift in Sources */,
 				5E6B63B62623B3E900C97D4A /* iOSPowerMonitorApp.swift in Sources */,
 			);
@@ -269,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6B63C82623B3EC00C97D4A /* iOSPowerMonitorTests.swift in Sources */,
+				5E6B64122623C27200C97D4A /* DeviceProtocol.swift in Sources */,
+				5E6B63EA2623B5BE00C97D4A /* UnpluggedDeviceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

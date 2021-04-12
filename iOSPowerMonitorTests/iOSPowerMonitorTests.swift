@@ -29,5 +29,24 @@ class iOSPowerMonitorTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testUnpluggedDeviceShowsDown() {
+       // given
+       let sut = PowerMonitor(device: UnpluggedDeviceMock())
+       // when
+       let message = sut.getStatus()
+       // then
+        XCTAssertEqual(message, "Power is down")
+    }
 
+
+//    func testUnpluggedDeviceShowsDown() {
+//        // given
+//        let sut = PowerMonitor(device:
+//                                DeviceMock(testBatteryState: .unplugged))
+//        // when
+//        let message = sut.getStatus()
+//        // then
+//        XCTAssertEqual(message, "Power is down")
+//    }
 }
